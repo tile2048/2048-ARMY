@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>2048 Army — asciende de soldado raso a general</title>
+  <meta name="description" content="Juega a 2048 Army: une fichas del mismo rango para ascender de soldado raso a general y evita que el tablero se llene de tropa.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-ARMY/es/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-ARMY/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-ARMY/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-ARMY/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 Army — asciende de soldado raso a general">
+  <meta property="og:description" content="Juega a 2048 Army: une fichas del mismo rango para ascender de soldado raso a general y evita que el tablero se llene de tropa.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-ARMY/es/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link href="../style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 Army",
+    "inLanguage": "es",
+    "url": "https://tile2048.github.io/2048-ARMY/es/",
+    "description": "Versión militar del puzle de fichas 2048: une rangos iguales para ascender de soldado raso a general."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><a href="../" hreflang="en" lang="en">English</a> <span>Español</span></nav>
+
+    <div class="heading">
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+      <div class="title-container">
+        <h1 class="title">2048<small>Army</small></h1>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">¡Entra en filas y llega a ser <strong>GENERAL!</strong></p>
+      <a class="restart-button">Nueva partida</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Seguir jugando</a>
+          <a class="retry-button">Reintentar</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">Cómo jugar:</strong> usa las <strong>teclas de flecha</strong> para mover las fichas. Cuando dos fichas con el mismo rango se tocan, ¡<strong>ascienden!</strong>
+    </p>
+    <p class="game-about">
+      El campamento empieza con un soldado raso en el 2 y acaba con un general en el 2048; entre ambos desfilan cabo, sargento, teniente, capitán, mayor, coronel y los tres grados de general. Dos insignias del mismo rango en el tablero de 4×4 se funden en la siguiente, y los puntos de ese ascenso van directos a tu marcador. Las flechas mueven el desfile entero, o desliza el dedo en el móvil. Un tablero sin casillas libres y sin rangos vecinos termina la campaña, así que guarda una esquina y calcula un ascenso por delante. Pon al general en el tablero para ganar.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Leyenda de fichas:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="../style/img/2.svg" alt="soldado raso"></div></div>
+        <p>soldado raso</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="../style/img/4.svg" alt="cabo"></div></div>
+        <p>cabo</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="../style/img/8.svg" alt="sargento"></div></div>
+        <p>sargento</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="../style/img/16.svg" alt="teniente"></div></div>
+        <p>teniente</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="../style/img/32.svg" alt="capitán"></div></div>
+        <p>capitán</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="../style/img/64.svg" alt="mayor"></div></div>
+        <p>mayor</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="../style/img/128.svg" alt="coronel"></div></div>
+        <p>coronel</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="../style/img/256.svg" alt="general de brigada"></div></div>
+        <p>general de brigada</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="../style/img/512.svg" alt="general de división"></div></div>
+        <p>general de división</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="../style/img/1024.svg" alt="teniente general"></div></div>
+        <p>teniente general</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="../style/img/2048.svg" alt="general"></div></div>
+        <p>general</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Nota:</strong> Una variante creada por aficionados de 2048, el juego original de Gabriele Cirulli.
+    </p>
+  </div>
+
+  <script src="../js/bind_polyfill.js"></script>
+  <script src="../js/classlist_polyfill.js"></script>
+  <script src="../js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The English page sits at the repo root.
+    window.GAME_ROOT = "../";
+
+    // Text that only appears once a game is running, in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "¡Ganaste!",
+      "game-over": "¡Fin del juego!",
+      "tweet1": "Conseguí \"",
+      "tweet2": "\" en 2048-ARMY #2048game",
+      "2": "soldado raso",
+      "4": "cabo",
+      "8": "sargento",
+      "16": "teniente",
+      "32": "capitán",
+      "64": "mayor",
+      "128": "coronel",
+      "256": "general de brigada",
+      "512": "general de división",
+      "1024": "teniente general",
+      "2048": "general",
+      "s0": "Sol.",
+      "s2": "Sol.",
+      "s4": "Cbo.",
+      "s8": "Sgto.",
+      "s16": "Tte.",
+      "s32": "Cptn.",
+      "s64": "Myr.",
+      "s128": "Cnel.",
+      "s256": "Gral.Brig.",
+      "s512": "Gral.Div.",
+      "s1024": "Tte.Gral.",
+      "s2048": "Gral."
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "s" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="../js/keyboard_input_manager.js"></script>
+  <script src="../js/html_actuator.js"></script>
+  <script src="../js/grid.js"></script>
+  <script src="../js/tile.js"></script>
+  <script src="../js/local_storage_manager.js"></script>
+  <script src="../js/game_manager.js"></script>
+  <script src="../js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>

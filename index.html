@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2048 Army — climb the ranks to general</title>
+  <meta name="description" content="Play 2048 Army: merge tiles of the same rank to climb from private to general, and keep the board from filling up with troops.">
+
+  <link rel="canonical" href="https://tile2048.github.io/2048-ARMY/">
+  <link rel="alternate" hreflang="en" href="https://tile2048.github.io/2048-ARMY/">
+  <link rel="alternate" hreflang="es" href="https://tile2048.github.io/2048-ARMY/es/">
+  <link rel="alternate" hreflang="x-default" href="https://tile2048.github.io/2048-ARMY/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 Army — climb the ranks to general">
+  <meta property="og:description" content="Play 2048 Army: merge tiles of the same rank to climb from private to general, and keep the board from filling up with troops.">
+  <meta property="og:url" content="https://tile2048.github.io/2048-ARMY/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 Army",
+    "inLanguage": "en",
+    "url": "https://tile2048.github.io/2048-ARMY/",
+    "description": "An army version of the 2048 sliding tile puzzle: merge equal ranks to climb from private to general."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-links"><span>English</span> <a href="es/" hreflang="es" lang="es">Español</a></nav>
+
+    <div class="heading">
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+      <div class="title-container">
+        <h1 class="title">2048<small>Army</small></h1>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the ranks and get to be <strong>GENERAL!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same rank touch, they <strong>get promoted!</strong>
+    </p>
+    <p class="game-about">
+      Boot camp starts with a private at 2 and ends with a general at 2048; between them sit corporal, sergeant, lieutenant, captain, major, colonel and the three grades of general. Two badges of the same rank on the 4×4 board merge into the next one, and the points that promotion is worth go straight to your score. Arrow keys move the whole parade, or you can swipe on a phone. A board with no free square and no matching neighbours ends the campaign, so keep a corner open and plan one promotion ahead. Put the general on the board to win.
+    </p>
+    <hr>
+    <p class="tile-legend"><strong class="important">Tile Legend:</strong></p>
+    <div class="legend-list">
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2"><img src="style/img/2.svg" alt="private"></div></div>
+        <p>private</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-4"><img src="style/img/4.svg" alt="corporal"></div></div>
+        <p>corporal</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-8"><img src="style/img/8.svg" alt="sergeant"></div></div>
+        <p>sergeant</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-16"><img src="style/img/16.svg" alt="lieutenant"></div></div>
+        <p>lieutenant</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-32"><img src="style/img/32.svg" alt="captain"></div></div>
+        <p>captain</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-64"><img src="style/img/64.svg" alt="major"></div></div>
+        <p>major</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-128"><img src="style/img/128.svg" alt="colonel"></div></div>
+        <p>colonel</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-256"><img src="style/img/256.svg" alt="brigadier general"></div></div>
+        <p>brigadier general</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-512"><img src="style/img/512.svg" alt="major general"></div></div>
+        <p>major general</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-1024"><img src="style/img/1024.svg" alt="lieutenant general"></div></div>
+        <p>lieutenant general</p>
+      </div>
+      <div class="legend-row">
+        <div class="legend-grid"><div class="legend-cell cell-2048"><img src="style/img/2048.svg" alt="general"></div></div>
+        <p>general</p>
+      </div>
+    </div>
+    <hr>
+    <p class="disclaimer">
+    <strong class="important">Note:</strong> A fan-made variant of 2048, the original game by Gabriele Cirulli.
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script>
+    // Assets and sentences of this page. The Spanish page sets ../ and its own words.
+    window.GAME_ROOT = "";
+
+    // Text that only appears once a game is running, in the language of this page.
+    window.PAGE_STRINGS = {
+      "game-won": "You win!",
+      "game-over": "Game over!",
+      "tweet1": "I scored \"",
+      "tweet2": "\" at 2048-ARMY #2048game",
+      "2": "private",
+      "4": "corporal",
+      "8": "sergeant",
+      "16": "lieutenant",
+      "32": "captain",
+      "64": "major",
+      "128": "colonel",
+      "256": "brigadier general",
+      "512": "major general",
+      "1024": "lieutenant general",
+      "2048": "general",
+      "s0": "PVT",
+      "s2": "PVT",
+      "s4": "CPL",
+      "s8": "SGT",
+      "s16": "Lt",
+      "s32": "CPT",
+      "s64": "Maj",
+      "s128": "Col",
+      "s256": "Brig.Gen",
+      "s512": "Maj.Gen",
+      "s1024": "Lt.Gen",
+      "s2048": "Gen"
+    };
+
+    function Localize(key) {
+      var name = String(key);
+      if (window.PAGE_STRINGS.hasOwnProperty(name)) return window.PAGE_STRINGS[name];
+      // Scores that no longer sit on a tile fall back to the plain number.
+      if (name.charAt(0) === "s" && window.PAGE_STRINGS.hasOwnProperty(name.slice(1))) {
+        return window.PAGE_STRINGS[name.slice(1)];
+      }
+      return name;
+    }
+  </script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+  </script>
+</body>
+</html>
